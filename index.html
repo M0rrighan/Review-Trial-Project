@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>JS Conditional Code</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Conditional Code</header>
+      <div class="nav-links">
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Conditional_Code_Format" class="nav-link"
+          >Conditional Code Format</a
+        >
+        <a href="#Conditional_Operators" class="nav-link"
+          >Conditional Operators</a
+        >
+        <a href="#Equals_Signs" class="nav-link">Equals Signs</a>
+        <a href="#Nested_Conditions" class="nav-link">Nested Conditions</a>
+        <a href="#And/Or_Operators" class="nav-link">And/Or Operators</a>
+        <a href="#Arithmetic_Operators" class="nav-link"
+          >Arithmetic Operators</a
+        >
+        <!--
+            <a href="#The_Remainder_Operator" class="nav-link">The Remainder Operator</a>
+            <a href="#Arithmetic_Shorthand" class="nav-link">Arithmetic Shorthand</a>
+            <a href="#Unary_(++)_Operators" class="nav-link">Unary (++) Operators</a>
+            <a href="#Ternary_Operators" class="nav-link">Ternary Operators</a>
+            -->
+      </div>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <h2>Introduction</h2>
+        <p>
+          You can start building more complex JavaScript statements by using
+          conditional code. The conditional code allows you to ask if a
+          condition is met. If the condition is met, a certain code block is
+          run. If the condition isn't met, a different code block is run. The
+          answer to the condition must always be a yes or no answer.
+        </p>
+      </section>
+
+      <section class="main-section" id="Conditional_Code_Format">
+        <h2>Conditional Code Format</h2>
+        <p>Here's the format of the conditional code:</p>
+        <pre><code>                        
+    //begin with an if statement
+    if  ( condition ) {
+    //insert code to run ...
+    alert("Hello World");
+    //otherwise, run this code
+    } else {
+    //end the code block
+    }                        
+                </code></pre>
+        <p>
+          The statement begins with if followed by a condition in parentheses.
+          After the condition, the code block is run. Code blocks are contained
+          within curly braces { }. The else means "if the previous condition
+          isn't met, do this instead," or more simply, "Otherwise."
+        </p>
+        <p>Here's an example with some information:</p>
+        <pre><code>
+    //first declare a variable
+    var a = 100;
+    //state an if condition
+    if ( a > 100 ) {
+    //if true, then run this command
+    alert("Hello");
+    //if the condition isn't met, do this:
+    } else {
+    alert("Goodbye");
+    }
+                </code></pre>
+      </section>
+
+      <section class="main-section" id="Conditional_Operators">
+        <h2>Conditional Operators</h2>
+        <p>
+          In the condition statement, you can use a variety of operators to ask
+          questions:
+        </p>
+        <ul>
+          <li><code>if ( a == b) &nbsp;&nbsp; if a is equal to b</code></li>
+          <li><code>if ( a !=b ) &nbsp;&nbsp; if a is not equal to b</code></li>
+          <li><code>if ( a > b ) &nbsp;&nbsp; if a is greater than b</code></li>
+          <li><code>if ( a &lt; b ) &nbsp;&nbsp; if a is less than b</code></li>
+          <li>
+            <code
+              >if ( a >= b )&nbsp;&nbsp; if a is greater than or equal to
+              b</code
+            >
+          </li>
+          <li>
+            <code>
+              if ( a &lt;= b )&nbsp;&nbsp; if a is less than or equal to b
+            </code>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Equals_Signs">
+        <h2>Equals Signs</h2>
+        <p>
+          Note that the equals operator is two equals signs ==, not one. When
+          you set the value of a variable, you use one equals sign =. One equals
+          sign means "assign as" whereas two equals signs means "equals".
+        </p>
+
+        <p>
+          There's also a triple equals sign ===, which means "is strictly equal
+          to." This is a more formal way of checking conditions. For example, if
+          you have a variable that's a number, such as var a = 10, and another
+          variable that's a string, such as var a = "10", the two variables are
+          different types of variables and therefore aren't "strictly" equal,
+          even though they're the same.
+        </p>
+      </section>
+
+      <section class="main-section" id="Nested_Conditions">
+        <h2>Nested Conditions</h2>
+        <p>
+          You can nest multiple conditions. A nested condition looks like this:
+        </p>
+        <pre><code>
+    if  ( condition ) {
+        //run some code...
+        } else {
+        if  ( condition ) {
+        //run some code...
+        } else {
+        // otherwise, run this code
+        }
+                </code></pre>
+        <p>
+          Usually you don't nest more than a couple of condition levels, so that
+          the code doesn't become too complicated.
+        </p>
+      </section>
+
+      <section class="main-section" id="And/Or_Operators">
+        <h2>And/Or Operators</h2>
+        <p>
+          You can create more advanced conditions by including && (and) or ||
+          (or) operators. Here's an example of the "and" operator:
+        </p>
+        <pre><code>
+    //if a is equal to b and a is equal to c
+    if ( a == b && a == c )
+                </code></pre>
+        <p>Here's an example with "or" operator:</p>
+        <pre><code>
+    //if a is equal to be or a is equal to c
+    if ( a == b || a == c )
+                </code></pre>
+        <p>
+          For clarity, you can surround the conditions in their own parentheses,
+          like this:
+        </p>
+        <pre><code>
+    if ( (a == b) && (a == c) )
+                </code></pre>
+        <p>
+          Just remember that you always need both opening and closing
+          parentheses. And just as with more simple conditional statements, the
+          answer needs to be either yes or no.
+        </p>
+      </section>
+
+      <section class="main-section" id="Arithmetic_Operators">
+        <h2>Arithmetic Operators</h2>
+        <p>You can use a variety of arithmetic operators:</p>
+        <pre><code>
+    + // add
+    - //subtract
+    * //multiple
+    / //divide
+    % // the remainder (the % is called a modulus)
+                </code></pre>
+      </section>
+    </main>
+  </body>
+</html>
